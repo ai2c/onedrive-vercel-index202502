@@ -59,6 +59,8 @@ export default function CustomEmbedLinkMenu({
             leave="ease-in duration-100"
             leaveFrom="opacity-100"
             leaveTo="opacity-0"
+          >
+            <Dialog.Overlay className="fixed inset-0 bg-white/60 dark:bg-gray-800/60" />
           </Transition.Child>
 
           {/* This element is to trick the browser into centering the modal contents. */}
