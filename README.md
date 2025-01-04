@@ -12,84 +12,68 @@
 如有任何疑問、查詢及指教, 或因版權等原因需要刪除文件, 歡迎在首頁右上角(電郵)Email聯繫我。
 
 ---
-## 最近更新(<i>2025年1月3日</i>)
-<b><i>CorelDRAW Technical Suite 2024.</b></i> 25.2.1.313 (英葡繁簡)精簡為四語破解版_20241018<a href="https://www.coreldraw.com/en/product/technical-suite/" target="_blank" rel="noopener noreferrer">官網說明</a>價值1459美元
+## 最近更新(<i>2024年12月29日</i>)
+<b><i>檔案蜈蚣</b></i> 2.82高級破解版_20230415<a href="https://www.filecxx.com/zh_TW/index.html" target="_blank" rel="noopener noreferrer">官網說明</a>比IDM更好(已助作者解決繁體取得永久會員碼)
 <br>
-<b><i>檔案蜈蚣</b></i> 2.82高級破解版x64_20240515<a href="https://www.filecxx.com/zh_TW/index.html" target="_blank" rel="noopener noreferrer">官網說明</a>比IDM更好(已助作者解決繁體取得永久會員碼),2023-2-7破解,2024-5-15修正
+<b><i>ApowerREC</b></i> 16.4.18螢幕錄影王免安裝_20230620<a href="https://www.apowersoft.tw/record-all-screen" target="_blank" rel="noopener noreferrer">官網說明</a>
 <br>
-<b><i>新舊系統驅動程式自動掃描下載IObit Driver Booster Pro 繁體</b></i> 12.1.0.469_20241111 <a href="https://www.iobit.com/en/driver-booster-pro.php" target="_blank" rel="noopener noreferrer">官網說明</a>(老外)無捆綁體積小-完全取代簡體驅動人生驅動精靈驅動總裁ITSK自由天空(懂的都懂)
+<b><i>Adobe Premiere Pro</b></i> 2023_23.4.56頂尖的影片編輯軟體旗艦版已加入繁體(原莊只有簡體)20221030<a href="https://www.adobe.com/tw/products/premiere.html" target="_blank" rel="noopener noreferrer">官網說明</a>
 <br>
-<b><i>Fastcopy</b></i> Pro 5.8.0 x32+x64最完美三語版(繁簡英)由本人修改20241010<a href="https://fastcopy.jp/" target="_blank" rel="noopener noreferrer">官網說明</a>
+<b><i>威力導演</b></i> 21_6_3007_旗艦版20230615<a href="https://tw.cyberlink.com/products/powerdirector-video-editing-software/comparison_zh_TW.html" target="_blank" rel="noopener noreferrer">官網說明</a>
 <br>
-~~<font color=orange>ApowerREC</b></i> 1.7.1.10螢幕錄影王免安裝_20240710(破解不完整無法正常使用)</font>~~<a href="https://www.apowersoft.tw/record-all-screen" target="_blank" rel="noopener noreferrer">官網說明</a>
+<b><i>R-STUDIO</b></i> 9.1.191044磁碟復原軟體和硬碟復原工具Network+Technican(價值899美元)<a href="https://www.r-studio.com/zhhk/Buy-Forensic-Recovery-Technician.shtml" target="_blank" rel="noopener noreferrer">官網說明</a>
 <br>
-<b><i>ApowerREC</b></i> 1.6.6.19螢幕錄影王免安裝_20240729重新封裝(最稳定版)<a href="https://www.apowersoft.tw/record-all-screen" target="_blank" rel="noopener noreferrer">官網說明</a>
+<b><i>Acrobat 2023專業版永久</b></i> 23.003.20215版20230622<a href="https://helpx.adobe.com/tw/acrobat/kb/acrobat-dc-downloads.html" target="_blank" rel="noopener noreferrer">官網說明</a>
 <br>
-<b><i>Acrobat 2024專業版永久x32</b></i> 24.005.20320版20241210 (x64的版本功能不完整)<a href="https://helpx.adobe.com/tw/acrobat/kb/acrobat-dc-downloads.html" target="_blank" rel="noopener noreferrer">官網說明</a>
+<b><i>CCleaner</b></i> 6.10.10002垃圾清理工具免安裝<a href="https://secure.ccleaner.com/502/uurl-tkybzwkhs2?x-campaign=1&x-origin=2&x-variant=1" target="_blank" rel="noopener noreferrer">官網說明</a>
 <br>
-<b><i>全網獨家Adobe After Effect</b></i> 2025_25.0.1.2展開動態設計的新一頁軟體旗艦版已加入繁體(官方只有簡體,且從來沒有繁體)20241028<a href="https://www.adobe.com/hk_zh/products/aftereffects.html" target="_blank" rel="noopener noreferrer">官網說明</a>
+<b><i>WiseCare365_Pro</b></i> 6.5.5系統清理和加速工具專業免安裝<a href="https://www.wisecleaner.com.cn/wise-care-365.html" target="_blank" rel="noopener noreferrer">官網說明</a>
 <br>
-<b><i>全網獨家Adobe Premiere Pro</b></i> 2025_25.0.0.61頂尖的影片編輯軟體旗艦版已加入繁體(官方只有簡體)20241024<a href="https://www.adobe.com/tw/products/premiere.html" target="_blank" rel="noopener noreferrer">官網說明</a>
-<br>
-<b><i>Adobe Photoshop</b></i> 2025_26.1.0.121頂尖的AI 相片和設計軟體20241203<a href="https://www.adobe.com/tw/products/photoshop.html" target="_blank" rel="noopener noreferrer">官網說明</a>
-<br>
-<b><i>Adobe Illustrator</b></i> 2025_29.1.0.142領先業界的向量圖形軟體20241205<a href="https://www.adobe.com/tw/products/illustrator.html" target="_blank" rel="noopener noreferrer">官網說明</a>
-<br>
-<b><i>Adobe Animate</b></i> 2024_24.0.5 2D 動畫軟體、Flash 動畫軟體20241022<a href="https://www.adobe.com/tw/products/animate.html" target="_blank" rel="noopener noreferrer">官網說明</a>
-<br>
-<b><i>威力導演</b></i> 2025-v23.0.1204.1_旗艦版20241207<a href="https://tw.cyberlink.com/products/powerdirector-video-editing-software/comparison_zh_TW.html" target="_blank" rel="noopener noreferrer">官網說明</a>
-<br>
-<b><i>R-STUDIO</b></i> 9.4.191370磁碟復原軟體和硬碟復原工具Network+Technican(價值899美元)<a href="https://www.r-studio.com/zhhk/Buy-Forensic-Recovery-Technician.shtml" target="_blank" rel="noopener noreferrer">官網說明</a>
-<br>
-<b><i>CCleaner商業版</b></i> 6.31.11415垃圾清理工具免安裝<a href="https://secure.ccleaner.com/502/uurl-tkybzwkhs2?x-campaign=1&x-origin=2&x-variant=1" target="_blank" rel="noopener noreferrer">官網說明</a>
-<br>
-<b><i>WiseCare365_Pro</b></i> 7.1.0.692系統清理和加速工具專業免安裝<a href="https://www.wisecleaner.com.cn/wise-care-365.html" target="_blank" rel="noopener noreferrer">官網說明</a>
-<br>
-<b><i>Beyond Compare</b></i> 5.0.4.30422專業級資料夾和檔案對比工具(專業版價值RMB469)<a href="https://www.beyondcompare.cc/goumai.html?lid=1618107649321" target="_blank" rel="noopener noreferrer">官網說明</a>
+<b><i>Beyond Compare</b></i> 4.4.6專業級資料夾和檔案對比工具(專業版價值RMB469)<a href="https://www.beyondcompare.cc/goumai.html?lid=1618107649321" target="_blank" rel="noopener noreferrer">官網說明</a>
 <br>
 <b><i>RECUVA數據恢復專家</b></i> 1.53.2083商業專業技術三版合一免安裝<a href="http://www.recuvacn.com/index.html" target="_blank" rel="noopener noreferrer">官網說明</a>
 <br>
-<b><i>Bandicam</b></i> 7.1.2.2451.2024 最好的螢幕、遊戲及網絡攝像機擷取錄影工具<a href="https://www.bandicam.com/tw" target="_blank" rel="noopener noreferrer">官網說明</a>
+<b><i>Bandicam</b></i> 6.0.4.2024 最好的螢幕、遊戲及網絡攝像機擷取錄影工具<a href="https://www.bandicam.com/tw" target="_blank" rel="noopener noreferrer">官網說明</a>
 <br>
 <b><i>SoftPerfect RAMDisk</b></i> 4.33最強內存虛擬硬盤<a href="https://www.softperfect.com/products/ramdisk/" target="_blank" rel="noopener noreferrer">官網說明</a>
 <br>
 <b><i>QQ影音</b></i> 3.9.936免安裝繁體最後完美修改版(4.0版本有重大問題切勿升級)
 <br>
-<b><i>WiseRegistryCleaner_Pro</b></i> 11.1.5.720登錄註冊表清理專業免安裝<a href="https://www.wisecleaner.com.cn/wise-registry-cleaner.html" target="_blank" rel="noopener noreferrer">官網說明</a>
+<b><i>WiseRegistryCleaner_Pro</b></i> 10.9.2.709登錄註冊表清理專業免安裝<a href="https://www.wisecleaner.com.cn/wise-registry-cleaner.html" target="_blank" rel="noopener noreferrer">官網說明</a>
 <br>
-<b><i>GoldWave</b></i> 7.0專業數字音頻處理免安裝<a href="https://www.goldwavechina.cn/" target="_blank" rel="noopener noreferrer">官網說明</a>
+<b><i>GoldWave</b></i> 6.7.5專業數字音頻處理免安裝<a href="https://www.goldwavechina.cn/" target="_blank" rel="noopener noreferrer">官網說明</a>
 <br>
 ~~<font color=orange>最快影片轉格式Movavi.Video.Converter2022旗艦Premium.22.5免安裝</font>~~<a href="https://www.movavi.com/zh/videoconverter/" target="_blank" rel="noopener noreferrer">官網說明</a>
 <br>
-<b><i>快快樂樂學倉頡</b></i> Win11修改版(請下載7z壓縮檔及詳細觀看使用說明)
+<b><i>快快樂樂學倉頡</b></i> Win11修改版
 <br>
-Youtube下載解決有畫無聲 <b><i>Gihosoft TubeGet Pro</b></i> 更新至9.3.88免安裝20240615<a href="https://www.jihosoft.cn/tubeget/" target="_blank" rel="noopener noreferrer">官網說明</a>
+Youtube下載解決有畫無聲 <b><i>Gihosoft TubeGet Pro</b></i> 更新至8.9.82免安裝<a href="https://www.jihosoft.cn/tubeget/" target="_blank" rel="noopener noreferrer">官網說明</a>
 <br>
-<b><i>HD Video Converter Factory Pro</b></i> 27.8 最強影片轉檔免安裝<a href="https://www.videoconverterfactory.com/hd-video-converter/" target="_blank" rel="noopener noreferrer">官網說明</a>
+<b><i>HD Video Converter Factory Pro</b></i> 25.6最強影片轉檔免安裝<a href="https://www.videoconverterfactory.com/hd-video-converter/" target="_blank" rel="noopener noreferrer">官網說明</a>
 <br>
-<b><i>DiskGenius</b></i> 5.61.1580專業版免安裝<a href="https://www.diskgenius.cn/pro/details.php" target="_blank" rel="noopener noreferrer">官網說明</a>
+<b><i>DiskGenius</b></i> 5.45.1412專業版免安裝<a href="https://www.diskgenius.cn/pro/details.php" target="_blank" rel="noopener noreferrer">官網說明</a>
 <br>
-移除軟件工具<b><i>REVO_Uninstaller_Pro</b></i> 5.3.4免安裝<a href="https://www.revouninstaller.com/zh/products/revo-uninstaller-pro/" target="_blank" rel="noopener noreferrer">官網說明</a>
+移除軟件工具<b><i>REVO_Uninstaller_Pro</b></i> 5.1.5免安裝<a href="https://www.revouninstaller.com/products/revo-uninstaller-pro/" target="_blank" rel="noopener noreferrer">官網說明</a>
 <br>
-優化工具<b><i>WinaeroTweaker</b></i> 1.63.0.0免安裝<a href="https://winaerotweaker.com/" target="_blank" rel="noopener noreferrer">官網說明</a>
+優化工具<b><i>WinaeroTweaker</b></i> 1.4.0免安裝<a href="https://guidesure.net/zh-hant/winaero-tweaker%EF%BC%9A%E7%B5%82%E6%A5%B5-windows-10-%E8%87%AA%E5%AE%9A%E7%BE%A9%E5%85%8D%E8%B2%BB%E5%B7%A5%E5%85%B7" target="_blank" rel="noopener noreferrer">官網說明</a>
 <br>
-<b><i>AcdSee 8 Pro</b></i> 繁體專業完美永久版 
+<b><i>AcdSee 8 Pro</b></i> 繁體專業永久版 
 <br>
-<b><i>7zip</b></i> 24.09及<b><i>WinRar</b></i> 7.01 最強壓縮解壓工具正式版
+<b><i>7zip</b></i> 23.01及<b><i>WinRar</b></i> 6.2.2最強壓縮解壓工具正式版
 <br>
-<b><i>NotePad++</b></i> 8.7.4完全取代記事本<a href="https://notepad-plus-plus.org/downloads/" target="_blank" rel="noopener noreferrer">官網說明</a>
+<b><i>NotePad++</b></i> 8.5.4完全取代記事本<a href="https://notepad-plus-plus.org/downloads/" target="_blank" rel="noopener noreferrer">官網說明</a>
 <br>
-<b><i>Ultraiso</b></i> 9.76.3860 掛載ISO檔及虛擬光盤最新永久2023-7-9<a href="http://tw.ezbsystems.com/ultraiso/main.htm" target="_blank" rel="noopener noreferrer">官網說明</a>
+<b><i>Ultraiso</b></i> 9.76 掛載ISO檔及虛擬光盤最新永久<a href="http://tw.ezbsystems.com/ultraiso/main.htm" target="_blank" rel="noopener noreferrer">官網說明</a>
 <br>
-<b><i>AutoCad2021</b></i>_繁體 x64_最終精簡去驗證無需激活_Mod-2021
+<b><i>AutoCad2021</b></i>_繁體64_最終精簡去驗證無需激活_Mod-2021
 <br>
-<b><i>AutoCad2011</b></i>_英繁簡x32_x64_六合一_最終完美修改2022-06-10
+<b><i>AutoCad2011</b></i>_英繁簡32_64_六合一_最終完美修改2022-06-10
 <br>
-<b><i>Windows10</b></i> 19045.5131_x64_zh-TW_自動永久2024-11-25
+<b><i>Windows10</b></i> 19045.1889_x64_zh-TW_自動永久
 <br>
-<b><i>Office 2016 VOL 繁體中文</b></i>大量授權永久2024-12
+<b><i>Office 2016 VOL</b></i>大量授權永久
 <br>
-<b><i>CC9-recovery-Final-Postman22.10.30-Twrp370-A9-A11-TW.img</b></i>
+<b>CC9-recovery-Final-Postman22.07.31-Twrp362</b>-A9-A11-TW.img
 <br>
 
 ---
