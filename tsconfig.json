@@ -18,7 +18,8 @@
     "isolatedModules": true,
     "jsx": "preserve",
     "noImplicitAny": false,
-    "incremental": true
+    "incremental": true,
+    "type" : "react-pdf"
   },
   "include": [
     "next-env.d.ts",
