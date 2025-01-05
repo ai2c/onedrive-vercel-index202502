@@ -47,7 +47,7 @@ export default function CustomEmbedLinkMenu({
   const filename = readablePath.substring(readablePath.lastIndexOf('/') + 1)
   const [name, setName] = useState(filename)
 
-  return (
+  await (
     <Transition appear show={menuOpen} as={Fragment}>
       <Dialog as="div" className="fixed inset-0 z-10 overflow-y-auto" onClose={closeMenu} initialFocus={focusInputRef}>
         <div className="min-h-screen px-4 text-center">
