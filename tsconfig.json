@@ -19,7 +19,7 @@
     "jsx": "preserve",
     "noImplicitAny": false,
     "incremental": true,
-   	"types": ["expect-puppeteer", "jest-environment-puppeteer", "puppeteer", "@testing-library/jest-dom"]
+   	"types": ["react-pdf"]
   },
   "include": [
     "next-env.d.ts",
