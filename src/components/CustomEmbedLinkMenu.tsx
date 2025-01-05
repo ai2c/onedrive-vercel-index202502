@@ -60,8 +60,7 @@ export default function CustomEmbedLinkMenu({
             leaveFrom="opacity-100"
             leaveTo="opacity-0"
           >
-            <Dialog.Overlay as="h3" className="fixed inset-0 bg-white/60 dark:bg-gray-800/60" />
-          </Transition.Child>
+           </Transition.Child>
 
           {/* This element is to trick the browser into centering the modal contents. */}
           <span className="inline-block h-screen align-middle" aria-hidden="true">
