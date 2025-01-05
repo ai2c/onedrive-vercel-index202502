@@ -17,8 +17,7 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "preserve",
-    "noImplicitAny": false,
-    "noImplicitAnyForClassMembers": false,
+    "noImplicitAny": true,
     "incremental": true
   },
   "include": [
