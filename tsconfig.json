@@ -18,8 +18,8 @@
     "isolatedModules": true,
     "jsx": "preserve",
     "noImplicitAny": false,
-    "incremental": true
-   	"types": "react-pdf"
+    "incremental": true,
+   	"types": ["expect-puppeteer", "jest-environment-puppeteer", "puppeteer", "@testing-library/jest-dom"]
   },
   "include": [
     "next-env.d.ts",
