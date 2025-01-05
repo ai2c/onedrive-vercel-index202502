@@ -1,3 +1,4 @@
+import { Dialog } from '@headlessui/react'
 import Image from 'next/image'
 import { Trans } from 'next-i18next'
 

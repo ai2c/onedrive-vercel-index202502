@@ -3,6 +3,7 @@ import type { OdFolderChildren } from '../types'
 import Link from 'next/link'
 import { FC } from 'react'
 import { useClipboard } from 'use-clipboard-copy'
+import { Dialog } from '@headlessui/react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { useTranslation } from 'next-i18next'
 

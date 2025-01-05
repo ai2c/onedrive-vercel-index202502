@@ -1,3 +1,5 @@
+import { Dialog } from '@headlessui/react'
+
 const Loading: React.FC<{ loadingText: string }> = ({ loadingText }) => {
   return (
     <Dialog.Panel className="flex items-center justify-center space-x-1 rounded py-32 dark:text-white">

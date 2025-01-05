@@ -4,6 +4,7 @@ import { useRouter } from 'next/router'
 
 import Preview from 'preview-office-docs'
 
+import { Dialog } from '@headlessui/react'
 import DownloadButtonGroup from '../DownloadBtnGtoup'
 import { DownloadBtnContainer } from './Containers'
 import { getBaseUrl } from '../../utils/getBaseUrl'

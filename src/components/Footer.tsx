@@ -1,3 +1,4 @@
+import { Dialog } from '@headlessui/react'
 import config from '../../config/site.config'
 
 const createFooterMarkup = () => {

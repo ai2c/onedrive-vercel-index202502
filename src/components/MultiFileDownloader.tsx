@@ -1,6 +1,7 @@
 import { NextRouter } from 'next/router'
 import toast from 'react-hot-toast'
 import JSZip from 'jszip'
+import { Dialog } from '@headlessui/react'
 import { useTranslation } from 'next-i18next'
 
 import { fetcher } from '../utils/fetchWithSWR'

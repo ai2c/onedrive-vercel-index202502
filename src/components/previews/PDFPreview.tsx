@@ -1,6 +1,7 @@
 import { useRouter } from 'next/router'
 import { getBaseUrl } from '../../utils/getBaseUrl'
 import { getStoredToken } from '../../utils/protectedRouteHandler'
+import { Dialog } from '@headlessui/react'
 import DownloadButtonGroup from '../DownloadBtnGtoup'
 import { DownloadBtnContainer } from './Containers'
 

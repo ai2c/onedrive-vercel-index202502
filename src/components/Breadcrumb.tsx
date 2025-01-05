@@ -1,6 +1,7 @@
 import type { ParsedUrlQuery } from 'querystring'
 
 import Link from 'next/link'
+import { Dialog } from '@headlessui/react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { useTranslation } from 'next-i18next'
 

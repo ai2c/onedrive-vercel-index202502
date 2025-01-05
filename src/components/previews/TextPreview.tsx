@@ -1,4 +1,5 @@
 import { useRouter } from 'next/router'
+import { Dialog } from '@headlessui/react'
 import { useTranslation } from 'next-i18next'
 
 import FourOhFour from '../FourOhFour'

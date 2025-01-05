@@ -1,5 +1,6 @@
 import { Fragment } from 'react'
 import { IconProp } from '@fortawesome/fontawesome-svg-core'
+import { Dialog } from '@headlessui/react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { Listbox, Transition } from '@headlessui/react'
 import { useTranslation } from 'next-i18next'

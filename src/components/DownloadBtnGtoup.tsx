@@ -1,4 +1,5 @@
 import { MouseEventHandler, useState } from 'react'
+import { Dialog } from '@headlessui/react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { IconProp } from '@fortawesome/fontawesome-svg-core'
 import toast from 'react-hot-toast'

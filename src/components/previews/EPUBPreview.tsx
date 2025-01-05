@@ -3,6 +3,7 @@ import type { OdFileObject } from '../../types'
 import { FC, useEffect, useRef, useState } from 'react'
 import { ReactReader } from 'react-reader'
 import { useRouter } from 'next/router'
+import { Dialog } from '@headlessui/react'
 import { useTranslation } from 'next-i18next'
 
 import Loading from '../Loading'

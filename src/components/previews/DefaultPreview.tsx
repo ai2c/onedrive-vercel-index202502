@@ -1,6 +1,7 @@
 import type { OdFileObject } from '../../types'
 import { FC } from 'react'
 
+import { Dialog } from '@headlessui/react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { useTranslation } from 'next-i18next'
 
