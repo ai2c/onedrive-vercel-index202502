@@ -188,7 +188,7 @@ export default function SearchModal({
 
   return (
     <Transition appear show={searchOpen} as={Fragment}>
-      <Dialog as="Dialog.Panel" className="fixed inset-0 z-[200] overflow-y-auto" onClose={closeSearchBox}>
+      <Dialog as="div" className="fixed inset-0 z-[200] overflow-y-auto" onClose={closeSearchBox}>
         <Dialog.Panel className="min-h-screen px-4 text-center">
           <Transition.Child
             as={Fragment}

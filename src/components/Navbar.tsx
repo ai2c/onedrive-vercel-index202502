@@ -129,7 +129,7 @@ const Navbar = () => {
       </Dialog.Panel>
 
       <Transition appear show={isOpen} as={Fragment}>
-        <Dialog as="Dialog.Panel" className="fixed inset-0 z-10 overflow-y-auto" open={isOpen} onClose={() => setIsOpen(false)}>
+        <Dialog as="div" className="fixed inset-0 z-10 overflow-y-auto" open={isOpen} onClose={() => setIsOpen(false)}>
           <Dialog.Panel className="min-h-screen px-4 text-center">
             <Transition.Child
               as={Fragment}
