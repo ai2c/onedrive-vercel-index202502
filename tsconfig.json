@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "target": "es5",
+    "target": "es6",
     "lib": [
       "dom",
       "dom.iterable",
@@ -18,8 +18,7 @@
     "isolatedModules": true,
     "jsx": "preserve",
     "noImplicitAny": false,
-    "incremental": true,
-    "types": ["expect-puppeteer", "jest-environment-puppeteer", "puppeteer"]
+    "incremental": true
   },
   "include": [
     "next-env.d.ts",
