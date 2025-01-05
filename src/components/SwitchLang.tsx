@@ -1,6 +1,6 @@
 import { Fragment } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { Dialog, Transition } from '@headlessui/react'
+import { Dialog } from '@headlessui/react'
 import { Menu, Transition } from '@headlessui/react'
 
 import { useRouter } from 'next/router'
