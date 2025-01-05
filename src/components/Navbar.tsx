@@ -140,8 +140,7 @@ const Navbar = () => {
               leaveFrom="opacity-100"
               leaveTo="opacity-0"
             >
-              <Dialog.Overlay className="fixed inset-0 bg-gray-50 dark:bg-gray-800" />
-            </Transition.Child>
+             </Transition.Child>
 
             {/* This element is to trick the browser into centering the modal contents. */}
             <span className="inline-block h-screen align-middle" aria-hidden="true">
