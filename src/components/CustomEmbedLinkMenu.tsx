@@ -1,6 +1,6 @@
 import { Dispatch, Fragment, SetStateAction, useRef, useState } from 'react'
 import { useTranslation } from 'next-i18next'
-import { Description, Dialog, DialogPanel, DialogTitle, Transition } from '@headlessui/react'
+import { Description, DialogPanel, DialogTitle, Transition } from '@headlessui/react'
 import * as Dialog from "@radix-ui/react-dialog"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { useClipboard } from 'use-clipboard-copy'
