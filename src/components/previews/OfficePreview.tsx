@@ -13,7 +13,7 @@ const OfficePreview: FC<{ file: OdFileObject }> = ({ file }) => {
   const { asPath } = useRouter()
   const hashedToken = getStoredToken(asPath)
 
-  const docContainer = useRef<HTMLDivElement>(null)
+  const docContainer = useRef<HTMLDialog.PanelElement>(null)
   const [docContainerWidth, setDocContainerWidth] = useState(600)
 
   const docUrl = encodeURIComponent(
@@ -25,14 +25,14 @@ const OfficePreview: FC<{ file: OdFileObject }> = ({ file }) => {
   }, [])
 
   return (
-    <div>
-      <div className="overflow-scroll" ref={docContainer} style={{ maxHeight: '90vh' }}>
+    <Dialog.Panel>
+      <Dialog.Panel className="overflow-scroll" ref={docContainer} style={{ maxHeight: '90vh' }}>
         <Preview url={docUrl} width={docContainerWidth.toString()} height="600" />
-      </div>
+      </Dialog.Panel>
       <DownloadBtnContainer>
         <DownloadButtonGroup />
       </DownloadBtnContainer>
-    </div>
+    </Dialog.Panel>
   )
 }
 

@@ -30,18 +30,18 @@ export default function OAuthStep3({ accessToken, expiryTime, refreshToken, erro
   }, [expiryTimeLeft])
 
   const [buttonContent, setButtonContent] = useState(
-    <div>
+    <Dialog.Panel>
       <span>{t('Store tokens')}</span> <FontAwesomeIcon icon="key" />
-    </div>
+    </Dialog.Panel>
   )
   const [buttonError, setButtonError] = useState(false)
 
   const sendAuthTokensToServer = async () => {
     setButtonError(false)
     setButtonContent(
-      <div>
+      <Dialog.Panel>
         <span>{t('Storing tokens')}</span> <LoadingIcon className="ml-1 inline h-4 w-4 animate-spin" />
-      </div>
+      </Dialog.Panel>
     )
 
     // verify identity of the authenticated user with the Microsoft Graph API
@@ -49,18 +49,18 @@ export default function OAuthStep3({ accessToken, expiryTime, refreshToken, erro
     if (status !== 200) {
       setButtonError(true)
       setButtonContent(
-        <div>
+        <Dialog.Panel>
           <span>{t('Error validating identify, restart')}</span> <FontAwesomeIcon icon="exclamation-circle" />
-        </div>
+        </Dialog.Panel>
       )
       return
     }
     if (data.userPrincipalName !== siteConfig.userPrincipalName) {
       setButtonError(true)
       setButtonContent(
-        <div>
+        <Dialog.Panel>
           <span>{t('Do not pretend to be the site owner')}</span> <FontAwesomeIcon icon="exclamation-circle" />
-        </div>
+        </Dialog.Panel>
       )
       return
     }
@@ -69,9 +69,9 @@ export default function OAuthStep3({ accessToken, expiryTime, refreshToken, erro
       .then(() => {
         setButtonError(false)
         setButtonContent(
-          <div>
+          <Dialog.Panel>
             <span>{t('Stored! Going home...')}</span> <FontAwesomeIcon icon="check" />
-          </div>
+          </Dialog.Panel>
         )
         setTimeout(() => {
           router.push('/')
@@ -80,15 +80,15 @@ export default function OAuthStep3({ accessToken, expiryTime, refreshToken, erro
       .catch(_ => {
         setButtonError(true)
         setButtonContent(
-          <div>
+          <Dialog.Panel>
             <span>{t('Error storing the token')}</span> <FontAwesomeIcon icon="exclamation-circle" />
-          </div>
+          </Dialog.Panel>
         )
       })
   }
 
   return (
-    <div className="flex min-h-screen flex-col items-center justify-center bg-white dark:bg-gray-900">
+    <Dialog.Panel className="flex min-h-screen flex-col items-center justify-center bg-white dark:bg-gray-900">
       <Head>
         <title>{t('OAuth Step 3 - {{title}}', { title: siteConfig.title })}</title>
       </Head>
@@ -96,9 +96,9 @@ export default function OAuthStep3({ accessToken, expiryTime, refreshToken, erro
       <main className="flex w-full flex-1 flex-col bg-gray-50 dark:bg-gray-800">
         <Navbar />
 
-        <div className="mx-auto w-full max-w-5xl p-4">
-          <div className="rounded bg-white p-3 dark:bg-gray-900 dark:text-gray-100">
-            <div className="mx-auto w-52">
+        <Dialog.Panel className="mx-auto w-full max-w-5xl p-4">
+          <Dialog.Panel className="rounded bg-white p-3 dark:bg-gray-900 dark:text-gray-100">
+            <Dialog.Panel className="mx-auto w-52">
               <Image
                 src="/images/fabulous-celebration.png"
                 width={912}
@@ -106,14 +106,14 @@ export default function OAuthStep3({ accessToken, expiryTime, refreshToken, erro
                 alt="fabulous celebration"
                 priority
               />
-            </div>
+            </Dialog.Panel>
             <h3 className="mb-4 text-center text-xl font-medium">
               {t('Welcome to your new onedrive-vercel-index 🎉')}
             </h3>
 
             <h3 className="mt-4 mb-2 text-lg font-medium">{t('Step 3/3: Get access and refresh tokens')}</h3>
             {error ? (
-              <div>
+              <Dialog.Panel>
                 <p className="py-1 font-medium text-red-500">
                   <FontAwesomeIcon icon="exclamation-circle" className="mr-2" />
                   <span>
@@ -146,7 +146,7 @@ export default function OAuthStep3({ accessToken, expiryTime, refreshToken, erro
                     </Trans>
                   </p>
                 )}
-                <div className="mb-2 mt-6 text-right">
+                <Dialog.Panel className="mb-2 mt-6 text-right">
                   <button
                     className="rounded-lg bg-gradient-to-br from-red-500 to-orange-400 px-4 py-2.5 text-center text-sm font-medium text-white hover:bg-gradient-to-bl focus:ring-4 focus:ring-red-200 disabled:cursor-not-allowed disabled:grayscale dark:focus:ring-red-800"
                     onClick={() => {
@@ -155,10 +155,10 @@ export default function OAuthStep3({ accessToken, expiryTime, refreshToken, erro
                   >
                     <FontAwesomeIcon icon="arrow-left" /> <span>{t('Restart')}</span>
                   </button>
-                </div>
-              </div>
+                </Dialog.Panel>
+              </Dialog.Panel>
             ) : (
-              <div>
+              <Dialog.Panel>
                 <p className="py-1 font-medium">{t('Success! The API returned what we needed.')}</p>
                 <ol className="py-1">
                   {accessToken && (
@@ -200,7 +200,7 @@ export default function OAuthStep3({ accessToken, expiryTime, refreshToken, erro
                     )}
                 </p>
 
-                <div className="mb-2 mt-6 text-right">
+                <Dialog.Panel className="mb-2 mt-6 text-right">
                   <button
                     className={`rounded-lg bg-gradient-to-br px-4 py-2.5 text-center text-sm font-medium text-white hover:bg-gradient-to-bl focus:ring-4 ${
                       buttonError
@@ -211,15 +211,15 @@ export default function OAuthStep3({ accessToken, expiryTime, refreshToken, erro
                   >
                     {buttonContent}
                   </button>
-                </div>
-              </div>
+                </Dialog.Panel>
+              </Dialog.Panel>
             )}
-          </div>
-        </div>
+          </Dialog.Panel>
+        </Dialog.Panel>
       </main>
 
       <Footer />
-    </div>
+    </Dialog.Panel>
   )
 }
 

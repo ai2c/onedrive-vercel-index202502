@@ -53,9 +53,9 @@ const AudioPreview: FC<{ file: OdFileObject }> = ({ file }) => {
   return (
     <>
       <PreviewContainer>
-        <div className="flex flex-col space-y-4 md:flex-row md:space-x-4">
-          <div className="relative flex aspect-square w-full items-center justify-center rounded bg-gray-100 transition-all duration-75 dark:bg-gray-700 md:w-48">
-            <div
+        <Dialog.Panel className="flex flex-col space-y-4 md:flex-row md:space-x-4">
+          <Dialog.Panel className="relative flex aspect-square w-full items-center justify-center rounded bg-gray-100 transition-all duration-75 dark:bg-gray-700 md:w-48">
+            <Dialog.Panel
               className={`absolute z-20 flex h-full w-full items-center justify-center transition-all duration-300 ${
                 playerStatus === PlayerState.Loading
                   ? 'bg-white opacity-80 dark:bg-gray-800'
@@ -63,10 +63,10 @@ const AudioPreview: FC<{ file: OdFileObject }> = ({ file }) => {
               }`}
             >
               <LoadingIcon className="z-10 inline-block h-5 w-5 animate-spin" />
-            </div>
+            </Dialog.Panel>
 
             {!brokenThumbnail ? (
-              <div className="absolute m-4 aspect-square rounded-full shadow-lg">
+              <Dialog.Panel className="absolute m-4 aspect-square rounded-full shadow-lg">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
                   className={`h-full w-full rounded-full object-cover object-top ${
@@ -76,7 +76,7 @@ const AudioPreview: FC<{ file: OdFileObject }> = ({ file }) => {
                   alt={file.name}
                   onError={() => setBrokenThumbnail(true)}
                 />
-              </div>
+              </Dialog.Panel>
             ) : (
               <FontAwesomeIcon
                 className={`z-10 h-5 w-5 ${playerStatus === PlayerState.Playing ? 'animate-spin' : ''}`}
@@ -84,15 +84,15 @@ const AudioPreview: FC<{ file: OdFileObject }> = ({ file }) => {
                 size="2x"
               />
             )}
-          </div>
+          </Dialog.Panel>
 
-          <div className="flex w-full flex-col justify-between">
-            <div>
-              <div className="mb-2 font-medium">{file.name}</div>
-              <div className="mb-4 text-sm text-gray-500">
+          <Dialog.Panel className="flex w-full flex-col justify-between">
+            <Dialog.Panel>
+              <Dialog.Panel className="mb-2 font-medium">{file.name}</Dialog.Panel>
+              <Dialog.Panel className="mb-4 text-sm text-gray-500">
                 {t('Last modified:') + ' ' + formatModifiedDateTime(file.lastModifiedDateTime)}
-              </div>
-            </div>
+              </Dialog.Panel>
+            </Dialog.Panel>
 
             <ReactAudioPlayer
               className="h-11 w-full"
@@ -102,8 +102,8 @@ const AudioPreview: FC<{ file: OdFileObject }> = ({ file }) => {
               preload="auto"
               volume={playerVolume}
             />
-          </div>
-        </div>
+          </Dialog.Panel>
+        </Dialog.Panel>
       </PreviewContainer>
 
       <DownloadBtnContainer>

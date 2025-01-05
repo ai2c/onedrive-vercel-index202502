@@ -16,7 +16,7 @@ export default function OAuthStep1() {
   const { t } = useTranslation()
 
   return (
-    <div className="flex min-h-screen flex-col items-center justify-center bg-white dark:bg-gray-900">
+    <Dialog.Panel className="flex min-h-screen flex-col items-center justify-center bg-white dark:bg-gray-900">
       <Head>
         <title>{t('OAuth Step 1 - {{title}}', { title: siteConfig.title })}</title>
       </Head>
@@ -24,11 +24,11 @@ export default function OAuthStep1() {
       <main className="flex w-full flex-1 flex-col bg-gray-50 dark:bg-gray-800">
         <Navbar />
 
-        <div className="mx-auto w-full max-w-5xl p-4">
-          <div className="rounded bg-white p-3 dark:bg-gray-900 dark:text-gray-100">
-            <div className="mx-auto w-52">
+        <Dialog.Panel className="mx-auto w-full max-w-5xl p-4">
+          <Dialog.Panel className="rounded bg-white p-3 dark:bg-gray-900 dark:text-gray-100">
+            <Dialog.Panel className="mx-auto w-52">
               <Image src="/images/fabulous-fireworks.png" width={912} height={912} alt="fabulous fireworks" priority />
-            </div>
+            </Dialog.Panel>
             <h3 className="mb-4 text-center text-xl font-medium">
               {t('Welcome to your new onedrive-vercel-index 🎉')}
             </h3>
@@ -65,7 +65,7 @@ export default function OAuthStep1() {
               </Trans>
             </p>
 
-            <div className="my-4 overflow-hidden">
+            <Dialog.Panel className="my-4 overflow-hidden">
               <table className="min-w-full table-auto">
                 <tbody>
                   <tr className="border-y bg-white dark:border-gray-700 dark:bg-gray-900">
@@ -118,7 +118,7 @@ export default function OAuthStep1() {
                   </tr>
                 </tbody>
               </table>
-            </div>
+            </Dialog.Panel>
 
             <p className="py-1 text-sm font-medium">
               <Trans>
@@ -128,7 +128,7 @@ export default function OAuthStep1() {
               </Trans>
             </p>
 
-            <div className="mb-2 mt-6 text-right">
+            <Dialog.Panel className="mb-2 mt-6 text-right">
               <button
                 className="rounded-lg bg-gradient-to-r from-cyan-500 to-blue-500 px-4 py-2.5 text-center text-sm font-medium text-white hover:bg-gradient-to-bl focus:ring-4 focus:ring-cyan-300 dark:focus:ring-cyan-800"
                 onClick={() => {
@@ -137,13 +137,13 @@ export default function OAuthStep1() {
               >
                 <span>{t('Proceed to OAuth')}</span> <FontAwesomeIcon icon="arrow-right" />
               </button>
-            </div>
-          </div>
-        </div>
+            </Dialog.Panel>
+          </Dialog.Panel>
+        </Dialog.Panel>
       </main>
 
       <Footer />
-    </div>
+    </Dialog.Panel>
   )
 }
 

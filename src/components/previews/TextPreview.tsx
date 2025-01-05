@@ -47,14 +47,14 @@ const TextPreview = ({ file }) => {
   }
 
   return (
-    <div>
+    <Dialog.Panel>
       <PreviewContainer>
         <pre className="overflow-x-scroll p-0 text-sm md:p-3">{content}</pre>
       </PreviewContainer>
       <DownloadBtnContainer>
         <DownloadButtonGroup />
       </DownloadBtnContainer>
-    </div>
+    </Dialog.Panel>
   )
 }
 

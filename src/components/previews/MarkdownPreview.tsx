@@ -80,7 +80,7 @@ const MarkdownPreview: FC<{
 
       const match = /language-(\w+)/.exec(className || '')
       return (
-        <SyntaxHighlighter language={match ? match[1] : 'language-text'} style={tomorrowNight} PreTag="div" {...props}>
+        <SyntaxHighlighter language={match ? match[1] : 'language-text'} style={tomorrowNight} PreTag="Dialog.Panel" {...props}>
           {String(children).replace(/\n$/, '')}
         </SyntaxHighlighter>
       )
@@ -110,9 +110,9 @@ const MarkdownPreview: FC<{
   }
 
   return (
-    <div>
+    <Dialog.Panel>
       <PreviewContainer>
-        <div className="markdown-body">
+        <Dialog.Panel className="markdown-body">
           {/* Using rehypeRaw to render HTML inside Markdown is potentially dangerous, use under safe environments. (#18) */}
           <ReactMarkdown
             // @ts-ignore
@@ -126,14 +126,14 @@ const MarkdownPreview: FC<{
           >
             {content}
           </ReactMarkdown>
-        </div>
+        </Dialog.Panel>
       </PreviewContainer>
       {standalone && (
         <DownloadBtnContainer>
           <DownloadButtonGroup />
         </DownloadBtnContainer>
       )}
-    </div>
+    </Dialog.Panel>
   )
 }
 

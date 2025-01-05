@@ -14,32 +14,32 @@ const DefaultPreview: FC<{ file: OdFileObject }> = ({ file }) => {
   const { t } = useTranslation()
 
   return (
-    <div>
+    <Dialog.Panel>
       <PreviewContainer>
-        <div className="items-center px-5 py-4 md:flex md:space-x-8">
-          <div className="rounded-lg border border-gray-900/10 px-8 py-20 text-center dark:border-gray-500/30">
+        <Dialog.Panel className="items-center px-5 py-4 md:flex md:space-x-8">
+          <Dialog.Panel className="rounded-lg border border-gray-900/10 px-8 py-20 text-center dark:border-gray-500/30">
             <FontAwesomeIcon icon={getFileIcon(file.name, { video: Boolean(file.video) })} />
-            <div className="mt-6 text-sm font-medium line-clamp-3 md:w-28">{file.name}</div>
-          </div>
+            <Dialog.Panel className="mt-6 text-sm font-medium line-clamp-3 md:w-28">{file.name}</Dialog.Panel>
+          </Dialog.Panel>
 
-          <div className="flex flex-col space-y-2 py-4 md:flex-1">
-            <div>
-              <div className="py-2 text-xs font-medium uppercase opacity-80">{t('Last modified')}</div>
-              <div>{formatModifiedDateTime(file.lastModifiedDateTime)}</div>
-            </div>
+          <Dialog.Panel className="flex flex-col space-y-2 py-4 md:flex-1">
+            <Dialog.Panel>
+              <Dialog.Panel className="py-2 text-xs font-medium uppercase opacity-80">{t('Last modified')}</Dialog.Panel>
+              <Dialog.Panel>{formatModifiedDateTime(file.lastModifiedDateTime)}</Dialog.Panel>
+            </Dialog.Panel>
 
-            <div>
-              <div className="py-2 text-xs font-medium uppercase opacity-80">{t('File size')}</div>
-              <div>{humanFileSize(file.size)}</div>
-            </div>
+            <Dialog.Panel>
+              <Dialog.Panel className="py-2 text-xs font-medium uppercase opacity-80">{t('File size')}</Dialog.Panel>
+              <Dialog.Panel>{humanFileSize(file.size)}</Dialog.Panel>
+            </Dialog.Panel>
 
-            <div>
-              <div className="py-2 text-xs font-medium uppercase opacity-80">{t('MIME type')}</div>
-              <div>{file.file?.mimeType ?? t('Unavailable')}</div>
-            </div>
+            <Dialog.Panel>
+              <Dialog.Panel className="py-2 text-xs font-medium uppercase opacity-80">{t('MIME type')}</Dialog.Panel>
+              <Dialog.Panel>{file.file?.mimeType ?? t('Unavailable')}</Dialog.Panel>
+            </Dialog.Panel>
 
-            <div>
-              <div className="py-2 text-xs font-medium uppercase opacity-80">{t('Hashes')}</div>
+            <Dialog.Panel>
+              <Dialog.Panel className="py-2 text-xs font-medium uppercase opacity-80">{t('Hashes')}</Dialog.Panel>
               <table className="block w-full overflow-scroll whitespace-nowrap text-sm md:table">
                 <tbody>
                   <tr className="border-y bg-white dark:border-gray-700 dark:bg-gray-900">
@@ -68,14 +68,14 @@ const DefaultPreview: FC<{ file: OdFileObject }> = ({ file }) => {
                   </tr>
                 </tbody>
               </table>
-            </div>
-          </div>
-        </div>
+            </Dialog.Panel>
+          </Dialog.Panel>
+        </Dialog.Panel>
       </PreviewContainer>
       <DownloadBtnContainer>
         <DownloadButtonGroup />
       </DownloadBtnContainer>
-    </div>
+    </Dialog.Panel>
   )
 }
 

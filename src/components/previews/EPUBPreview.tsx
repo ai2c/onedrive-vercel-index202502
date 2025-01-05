@@ -15,7 +15,7 @@ const EPUBPreview: FC<{ file: OdFileObject }> = ({ file }) => {
   const hashedToken = getStoredToken(asPath)
 
   const [epubContainerWidth, setEpubContainerWidth] = useState(400)
-  const epubContainer = useRef<HTMLDivElement>(null)
+  const epubContainer = useRef<HTMLDialog.PanelElement>(null)
 
   useEffect(() => {
     setEpubContainerWidth(epubContainer.current ? epubContainer.current.offsetWidth : 400)
@@ -42,13 +42,13 @@ const EPUBPreview: FC<{ file: OdFileObject }> = ({ file }) => {
   }
 
   return (
-    <div>
-      <div
+    <Dialog.Panel>
+      <Dialog.Panel
         className="no-scrollbar flex w-full flex-col overflow-scroll rounded bg-white dark:bg-gray-900 md:p-3"
         style={{ maxHeight: '90vh' }}
       >
-        <div className="no-scrollbar w-full flex-1 overflow-scroll" ref={epubContainer} style={{ minHeight: '70vh' }}>
-          <div
+        <Dialog.Panel className="no-scrollbar w-full flex-1 overflow-scroll" ref={epubContainer} style={{ minHeight: '70vh' }}>
+          <Dialog.Panel
             style={{
               position: 'absolute',
               width: epubContainerWidth,
@@ -64,13 +64,13 @@ const EPUBPreview: FC<{ file: OdFileObject }> = ({ file }) => {
               epubInitOptions={{ openAs: 'epub' }}
               epubOptions={{ flow: 'scrolled', allowPopups: true }}
             />
-          </div>
-        </div>
-      </div>
+          </Dialog.Panel>
+        </Dialog.Panel>
+      </Dialog.Panel>
       <DownloadBtnContainer>
         <DownloadButtonGroup />
       </DownloadBtnContainer>
-    </div>
+    </Dialog.Panel>
   )
 }
 

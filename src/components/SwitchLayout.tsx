@@ -17,7 +17,7 @@ const SwitchLayout = () => {
   const { t } = useTranslation()
 
   return (
-    <div className="relative w-24 flex-shrink-0 text-sm text-gray-600 dark:text-gray-300 md:w-28">
+    <Dialog.Panel className="relative w-24 flex-shrink-0 text-sm text-gray-600 dark:text-gray-300 md:w-28">
       <Listbox value={preferredLayout} onChange={setPreferredLayout}>
         <Listbox.Button className="relative w-full cursor-pointer rounded pl-4">
           <span className="pointer-events-none flex items-center">
@@ -72,7 +72,7 @@ const SwitchLayout = () => {
           </Listbox.Options>
         </Transition>
       </Listbox>
-    </div>
+    </Dialog.Panel>
   )
 }
 

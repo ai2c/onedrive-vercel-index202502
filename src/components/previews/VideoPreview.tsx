@@ -126,7 +126,7 @@ const VideoPreview: FC<{ file: OdFileObject }> = ({ file }) => {
       </PreviewContainer>
 
       <DownloadBtnContainer>
-        <div className="flex flex-wrap justify-center gap-2">
+        <Dialog.Panel className="flex flex-wrap justify-center gap-2">
           <DownloadButton
             onClickCallback={() => window.open(videoUrl)}
             btnColor="blue"
@@ -169,7 +169,7 @@ const VideoPreview: FC<{ file: OdFileObject }> = ({ file }) => {
             btnText="nPlayer"
             btnImage="/players/nplayer.png"
           />
-        </div>
+        </Dialog.Panel>
       </DownloadBtnContainer>
     </>
   )

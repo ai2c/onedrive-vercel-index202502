@@ -44,12 +44,12 @@ const TextPreview = ({ file }) => {
   }
 
   return (
-    <div>
+    <Dialog.Panel>
       <PreviewContainer>
         <pre className="overflow-x-scroll p-0 text-sm md:p-3">{content}</pre>
       </PreviewContainer>
       <DownloadBtnContainer>
-        <div className="flex justify-center">
+        <Dialog.Panel className="flex justify-center">
           <DownloadButton
             onClickCallback={() => window.open(parseDotUrl(content) ?? '')}
             btnColor="blue"
@@ -57,9 +57,9 @@ const TextPreview = ({ file }) => {
             btnIcon="external-link-alt"
             btnTitle={t('Open URL{{url}}', { url: ' ' + parseDotUrl(content) ?? '' })}
           />
-        </div>
+        </Dialog.Panel>
       </DownloadBtnContainer>
-    </div>
+    </Dialog.Panel>
   )
 }
 

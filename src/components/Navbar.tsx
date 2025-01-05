@@ -58,33 +58,33 @@ const Navbar = () => {
   }
 
   return (
-    <div className="sticky top-0 z-[100] border-b border-gray-900/10 bg-white bg-opacity-80 backdrop-blur-md dark:border-gray-500/30 dark:bg-gray-900">
+    <Dialog.Panel className="sticky top-0 z-[100] border-b border-gray-900/10 bg-white bg-opacity-80 backdrop-blur-md dark:border-gray-500/30 dark:bg-gray-900">
       <Toaster />
 
       <SearchModal searchOpen={searchOpen} setSearchOpen={setSearchOpen} />
 
-      <div className="mx-auto flex w-full items-center justify-between space-x-4 px-4 py-1">
+      <Dialog.Panel className="mx-auto flex w-full items-center justify-between space-x-4 px-4 py-1">
         <Link href="/" passHref className="flex items-center space-x-2 py-2 hover:opacity-80 dark:text-white md:p-2">
           <Image src={siteConfig.icon} alt="icon" width="25" height="25" priority />
           <span className="hidden font-bold sm:block">{siteConfig.title}</span>
         </Link>
 
-        <div className="flex flex-1 items-center space-x-4 text-gray-700 md:flex-initial">
+        <Dialog.Panel className="flex flex-1 items-center space-x-4 text-gray-700 md:flex-initial">
           <button
             className="flex flex-1 items-center justify-between rounded-lg bg-gray-100 px-2.5 py-1.5 hover:opacity-80 dark:bg-gray-800 dark:text-white md:w-48"
             onClick={openSearchBox}
           >
-            <div className="flex items-center space-x-2">
+            <Dialog.Panel className="flex items-center space-x-2">
               <FontAwesomeIcon className="h-4 w-4" icon="search" />
               <span className="truncate text-sm font-medium">{t('Search ...')}</span>
-            </div>
+            </Dialog.Panel>
 
-            <div className="hidden items-center space-x-1 md:flex">
-              <div className="rounded-lg bg-gray-200 px-2 py-1 text-xs font-medium dark:bg-gray-700">
+            <Dialog.Panel className="hidden items-center space-x-1 md:flex">
+              <Dialog.Panel className="rounded-lg bg-gray-200 px-2 py-1 text-xs font-medium dark:bg-gray-700">
                 {os === 'mac' ? '⌘' : 'Ctrl'}
-              </div>
-              <div className="rounded-lg bg-gray-200 px-2 py-1 text-xs font-medium dark:bg-gray-700">K</div>
-            </div>
+              </Dialog.Panel>
+              <Dialog.Panel className="rounded-lg bg-gray-200 px-2 py-1 text-xs font-medium dark:bg-gray-700">K</Dialog.Panel>
+            </Dialog.Panel>
           </button>
 
           <SwitchLang />
@@ -125,12 +125,12 @@ const Navbar = () => {
               <FontAwesomeIcon icon="sign-out-alt" />
             </button>
           )}
-        </div>
-      </div>
+        </Dialog.Panel>
+      </Dialog.Panel>
 
       <Transition appear show={isOpen} as={Fragment}>
-        <Dialog as="div" className="fixed inset-0 z-10 overflow-y-auto" open={isOpen} onClose={() => setIsOpen(false)}>
-          <div className="min-h-screen px-4 text-center">
+        <Dialog as="Dialog.Panel" className="fixed inset-0 z-10 overflow-y-auto" open={isOpen} onClose={() => setIsOpen(false)}>
+          <Dialog.Panel className="min-h-screen px-4 text-center">
             <Transition.Child
               as={Fragment}
               enter="ease-out duration-100"
@@ -140,7 +140,7 @@ const Navbar = () => {
               leaveFrom="opacity-100"
               leaveTo="opacity-0"
             >
-              <Dialog.Overlay className="fixed inset-0 bg-gray-50 dark:bg-gray-800" />
+              <div className="fixed inset-0 bg-gray-50 dark:bg-gray-800" />
             </Transition.Child>
 
             {/* This element is to trick the browser into centering the modal contents. */}
@@ -156,27 +156,27 @@ const Navbar = () => {
               leaveFrom="opacity-100 scale-100"
               leaveTo="opacity-0 scale-95"
             >
-              <div className="my-8 inline-block w-full max-w-md transform overflow-hidden rounded-lg bg-white p-6 text-left align-middle transition-all dark:bg-gray-900">
+              <Dialog.Panel className="my-8 inline-block w-full max-w-md transform overflow-hidden rounded-lg bg-white p-6 text-left align-middle transition-all dark:bg-gray-900">
                 <Dialog.Title className="text-lg font-bold text-gray-900 dark:text-gray-100">
                   {t('Clear all tokens?')}
                 </Dialog.Title>
-                <div className="mt-2">
+                <Dialog.Panel className="mt-2">
                   <p className="text-sm text-gray-500">
                     {t('These tokens are used to authenticate yourself into password protected folders, ') +
                       t('clearing them means that you will need to re-enter the passwords again.')}
                   </p>
-                </div>
+                </Dialog.Panel>
 
-                <div className="mt-4 max-h-32 overflow-y-scroll font-mono text-sm dark:text-gray-100">
+                <Dialog.Panel className="mt-4 max-h-32 overflow-y-scroll font-mono text-sm dark:text-gray-100">
                   {siteConfig.protectedRoutes.map((r, i) => (
-                    <div key={i} className="flex items-center space-x-1">
+                    <Dialog.Panel key={i} className="flex items-center space-x-1">
                       <FontAwesomeIcon icon="key" />
                       <span className="truncate">{r}</span>
-                    </div>
+                    </Dialog.Panel>
                   ))}
-                </div>
+                </Dialog.Panel>
 
-                <div className="mt-8 flex items-center justify-end">
+                <Dialog.Panel className="mt-8 flex items-center justify-end">
                   <button
                     className="mr-3 inline-flex items-center justify-center space-x-2 rounded bg-blue-500 px-4 py-2 text-white hover:bg-blue-400 focus:outline-none focus:ring focus:ring-blue-300"
                     onClick={() => setIsOpen(false)}
@@ -190,13 +190,13 @@ const Navbar = () => {
                     <FontAwesomeIcon icon={['far', 'trash-alt']} />
                     <span>{t('Clear all')}</span>
                   </button>
-                </div>
-              </div>
+                </Dialog.Panel>
+              </Dialog.Panel>
             </Transition.Child>
-          </div>
+          </Dialog.Panel>
         </Dialog>
       </Transition>
-    </div>
+    </Dialog.Panel>
   )
 }
 
