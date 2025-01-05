@@ -14,7 +14,7 @@ const OfficePreview: FC<{ file: OdFileObject }> = ({ file }) => {
   const { asPath } = useRouter()
   const hashedToken = getStoredToken(asPath)
 
-  const docContainer = useRef<HTMLDialog.PanelElement>(null)
+  const docContainer = useRef<HTMLDialogElement>(null)
   const [docContainerWidth, setDocContainerWidth] = useState(600)
 
   const docUrl = encodeURIComponent(

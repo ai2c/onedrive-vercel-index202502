@@ -16,7 +16,7 @@ const EPUBPreview: FC<{ file: OdFileObject }> = ({ file }) => {
   const hashedToken = getStoredToken(asPath)
 
   const [epubContainerWidth, setEpubContainerWidth] = useState(400)
-  const epubContainer = useRef<HTMLDialog.PanelElement>(null)
+  const epubContainer = useRef<HTMLDialogElement>(null)
 
   useEffect(() => {
     setEpubContainerWidth(epubContainer.current ? epubContainer.current.offsetWidth : 400)
