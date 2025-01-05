@@ -19,7 +19,7 @@
     "jsx": "preserve",
     "noImplicitAny": false,
     "incremental": true,
-   	"types": ["react-pdf"]
+    "types": ["react-pdf"]
   },
   "include": [
     "next-env.d.ts",
