@@ -1,5 +1,4 @@
 import { MouseEventHandler, useState } from 'react'
-import { Dialog } from '@headlessui/react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { IconProp } from '@fortawesome/fontawesome-svg-core'
 import toast from 'react-hot-toast'
@@ -75,7 +74,7 @@ const DownloadButtonGroup = () => {
   return (
     <>
       <CustomEmbedLinkMenu menuOpen={menuOpen} setMenuOpen={setMenuOpen} path={asPath} />
-      <Dialog.Panel className="flex flex-wrap justify-center gap-2">
+      <div className="flex flex-wrap justify-center gap-2">
         <DownloadButton
           onClickCallback={() => window.open(`/api/raw/?path=${asPath}${hashedToken ? `&odpt=${hashedToken}` : ''}`)}
           btnColor="blue"
@@ -99,7 +98,7 @@ const DownloadButtonGroup = () => {
           btnText={t('Customise link')}
           btnIcon="pen"
         />
-      </Dialog.Panel>
+      </div>
     </>
   )
 }

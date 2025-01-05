@@ -1,6 +1,5 @@
 import Head from 'next/head'
 import { useRouter } from 'next/router'
-import { Dialog } from '@headlessui/react'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 
 import siteConfig from '../../config/site.config'
@@ -14,24 +13,24 @@ export default function Folders() {
   const { query } = useRouter()
 
   return (
-    <Dialog.Panel className="flex min-h-screen flex-col items-center justify-center bg-white dark:bg-gray-900">
+    <div className="flex min-h-screen flex-col items-center justify-center bg-white dark:bg-gray-900">
       <Head>
         <title>{siteConfig.title}</title>
       </Head>
 
       <main className="flex w-full flex-1 flex-col bg-gray-50 dark:bg-gray-800">
         <Navbar />
-        <Dialog.Panel className="mx-auto w-full max-w-5xl py-4 sm:p-4">
+        <div className="mx-auto w-full max-w-5xl py-4 sm:p-4">
           <nav className="mb-4 flex items-center justify-between space-x-3 px-4 sm:px-0 sm:pl-1">
             <Breadcrumb query={query} />
             <SwitchLayout />
           </nav>
           <FileListing query={query} />
-        </Dialog.Panel>
+        </div>
       </main>
 
       <Footer />
-    </Dialog.Panel>
+    </div>
   )
 }
 

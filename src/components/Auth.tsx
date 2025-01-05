@@ -1,4 +1,3 @@
-import { Dialog } from '@headlessui/react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 import Image from 'next/image'
@@ -19,18 +18,18 @@ const Auth: FC<{ redirect: string }> = ({ redirect }) => {
   const { t } = useTranslation()
 
   return (
-    <Dialog.Panel className="mx-auto flex max-w-sm flex-col space-y-4 md:my-10">
-      <Dialog.Panel className="mx-auto w-3/4 md:w-5/6">
+    <div className="mx-auto flex max-w-sm flex-col space-y-4 md:my-10">
+      <div className="mx-auto w-3/4 md:w-5/6">
         <Image src={'/images/fabulous-wapmire-weekdays.png'} alt="authenticate" width={912} height={912} priority />
-      </Dialog.Panel>
-      <Dialog.Panel className="text-lg font-bold text-gray-900 dark:text-gray-100">{t('Enter Password')}</Dialog.Panel>
+      </div>
+      <div className="text-lg font-bold text-gray-900 dark:text-gray-100">{t('Enter Password')}</div>
 
       <p className="text-sm font-medium text-gray-500">
         {t('This route (the folder itself and the files inside) is password protected. ') +
           t('If you know the password, please enter it below.')}
       </p>
 
-      <Dialog.Panel className="flex items-center space-x-2">
+      <div className="flex items-center space-x-2">
         <input
           className="flex-1 rounded border border-gray-600/10 p-2 font-mono focus:outline-none focus:ring focus:ring-blue-300 dark:bg-gray-600 dark:text-white dark:focus:ring-blue-700"
           autoFocus
@@ -56,8 +55,8 @@ const Auth: FC<{ redirect: string }> = ({ redirect }) => {
         >
           <FontAwesomeIcon icon="arrow-right" />
         </button>
-      </Dialog.Panel>
-    </Dialog.Panel>
+      </div>
+    </div>
   )
 }
 

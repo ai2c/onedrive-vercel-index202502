@@ -2,7 +2,6 @@ import type { OdFileObject } from '../../types'
 
 import { FC, useEffect, useState } from 'react'
 import { useRouter } from 'next/router'
-import { Dialog } from '@headlessui/react'
 import { useTranslation } from 'next-i18next'
 
 import axios from 'axios'
@@ -127,7 +126,7 @@ const VideoPreview: FC<{ file: OdFileObject }> = ({ file }) => {
       </PreviewContainer>
 
       <DownloadBtnContainer>
-        <Dialog.Panel className="flex flex-wrap justify-center gap-2">
+        <div className="flex flex-wrap justify-center gap-2">
           <DownloadButton
             onClickCallback={() => window.open(videoUrl)}
             btnColor="blue"
@@ -170,7 +169,7 @@ const VideoPreview: FC<{ file: OdFileObject }> = ({ file }) => {
             btnText="nPlayer"
             btnImage="/players/nplayer.png"
           />
-        </Dialog.Panel>
+        </div>
       </DownloadBtnContainer>
     </>
   )

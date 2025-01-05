@@ -1,7 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import { useRouter } from 'next/router'
-import { Dialog } from '@headlessui/react'
 import { useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { useTranslation, Trans } from 'next-i18next'
@@ -25,7 +24,7 @@ export default function OAuthStep2() {
   const oAuthUrl = generateAuthorisationUrl()
 
   return (
-    <Dialog.Panel className="flex min-h-screen flex-col items-center justify-center bg-white dark:bg-gray-900">
+    <div className="flex min-h-screen flex-col items-center justify-center bg-white dark:bg-gray-900">
       <Head>
         <title>{t('OAuth Step 2 - {{title}}', { title: siteConfig.title })}</title>
       </Head>
@@ -33,9 +32,9 @@ export default function OAuthStep2() {
       <main className="flex w-full flex-1 flex-col bg-gray-50 dark:bg-gray-800">
         <Navbar />
 
-        <Dialog.Panel className="mx-auto w-full max-w-5xl p-4">
-          <Dialog.Panel className="rounded bg-white p-3 dark:bg-gray-900 dark:text-gray-100">
-            <Dialog.Panel className="mx-auto w-52">
+        <div className="mx-auto w-full max-w-5xl p-4">
+          <div className="rounded bg-white p-3 dark:bg-gray-900 dark:text-gray-100">
+            <div className="mx-auto w-52">
               <Image
                 src="/images/fabulous-come-back-later.png"
                 width={912}
@@ -43,7 +42,7 @@ export default function OAuthStep2() {
                 alt="fabulous come back later"
                 priority
               />
-            </Dialog.Panel>
+            </div>
             <h3 className="mb-4 text-center text-xl font-medium">
               {t('Welcome to your new onedrive-vercel-index 🎉')}
             </h3>
@@ -57,19 +56,19 @@ export default function OAuthStep2() {
               </Trans>
             </p>
 
-            <Dialog.Panel
+            <div
               className="relative my-2 cursor-pointer rounded border border-gray-500/50 bg-gray-50 font-mono text-sm hover:opacity-80 dark:bg-gray-800"
               onClick={() => {
                 window.open(oAuthUrl)
               }}
             >
-              <Dialog.Panel className="absolute top-0 right-0 p-1 opacity-60">
+              <div className="absolute top-0 right-0 p-1 opacity-60">
                 <FontAwesomeIcon icon="external-link-alt" />
-              </Dialog.Panel>
+              </div>
               <pre className="overflow-x-auto whitespace-pre-wrap p-2">
                 <code>{oAuthUrl}</code>
               </pre>
-            </Dialog.Panel>
+            </div>
 
             <p className="py-1">
               <Trans>
@@ -82,9 +81,9 @@ export default function OAuthStep2() {
               </Trans>
             </p>
 
-            <Dialog.Panel className="my-4 mx-auto w-2/3 overflow-hidden rounded">
+            <div className="my-4 mx-auto w-2/3 overflow-hidden rounded">
               <Image src="/images/step-2-screenshot.png" width={1466} height={607} alt="step 2 screenshot" />
-            </Dialog.Panel>
+            </div>
 
             <input
               className={`my-2 w-full flex-1 rounded border bg-gray-50 p-2 font-mono text-sm font-medium focus:outline-none focus:ring dark:bg-gray-800 dark:text-white ${
@@ -113,7 +112,7 @@ export default function OAuthStep2() {
                 : t('❌ No valid code extracted.')}
             </p>
 
-            <Dialog.Panel className="mb-2 mt-6 text-right">
+            <div className="mb-2 mt-6 text-right">
               <button
                 className="rounded-lg bg-gradient-to-br from-green-500 to-cyan-400 px-4 py-2.5 text-center text-sm font-medium text-white hover:bg-gradient-to-bl focus:ring-4 focus:ring-green-200 disabled:cursor-not-allowed disabled:grayscale dark:focus:ring-green-800"
                 disabled={authCode === ''}
@@ -132,13 +131,13 @@ export default function OAuthStep2() {
                   </>
                 )}
               </button>
-            </Dialog.Panel>
-          </Dialog.Panel>
-        </Dialog.Panel>
+            </div>
+          </div>
+        </div>
       </main>
 
       <Footer />
-    </Dialog.Panel>
+    </div>
   )
 }
 

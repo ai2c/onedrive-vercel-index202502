@@ -1,5 +1,4 @@
 import { useRouter } from 'next/router'
-import { Dialog } from '@headlessui/react'
 import { useTranslation } from 'next-i18next'
 
 import FourOhFour from '../FourOhFour'
@@ -48,14 +47,14 @@ const TextPreview = ({ file }) => {
   }
 
   return (
-    <Dialog.Panel>
+    <div>
       <PreviewContainer>
         <pre className="overflow-x-scroll p-0 text-sm md:p-3">{content}</pre>
       </PreviewContainer>
       <DownloadBtnContainer>
         <DownloadButtonGroup />
       </DownloadBtnContainer>
-    </Dialog.Panel>
+    </div>
   )
 }
 

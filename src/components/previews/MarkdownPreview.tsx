@@ -4,7 +4,6 @@ import remarkGfm from 'remark-gfm'
 import remarkMath from 'remark-math'
 import rehypeKatex from 'rehype-katex'
 import rehypeRaw from 'rehype-raw'
-import { Dialog } from '@headlessui/react'
 import { useTranslation } from 'next-i18next'
 import { LightAsync as SyntaxHighlighter } from 'react-syntax-highlighter'
 import { tomorrowNight } from 'react-syntax-highlighter/dist/cjs/styles/hljs'
@@ -111,9 +110,9 @@ const MarkdownPreview: FC<{
   }
 
   return (
-    <Dialog.Panel>
+    <div>
       <PreviewContainer>
-        <Dialog.Panel className="markdown-body">
+        <div className="markdown-body">
           {/* Using rehypeRaw to render HTML inside Markdown is potentially dangerous, use under safe environments. (#18) */}
           <ReactMarkdown
             // @ts-ignore
@@ -127,14 +126,14 @@ const MarkdownPreview: FC<{
           >
             {content}
           </ReactMarkdown>
-        </Dialog.Panel>
+        </div>
       </PreviewContainer>
       {standalone && (
         <DownloadBtnContainer>
           <DownloadButtonGroup />
         </DownloadBtnContainer>
       )}
-    </Dialog.Panel>
+    </div>
   )
 }
 

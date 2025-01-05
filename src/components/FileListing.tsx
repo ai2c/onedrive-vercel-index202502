@@ -1,7 +1,6 @@
 import type { OdFileObject, OdFolderChildren, OdFolderObject } from '../types'
 import { ParsedUrlQuery } from 'querystring'
 import { FC, MouseEventHandler, SetStateAction, useEffect, useRef, useState } from 'react'
-import { Dialog } from '@headlessui/react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import toast, { Toaster } from 'react-hot-toast'
 import emojiRegex from 'emoji-regex'
@@ -169,7 +168,7 @@ const FileListing: FC<{ query?: ParsedUrlQuery }> = ({ query }) => {
     // If error includes 403 which means the user has not completed initial setup, redirect to OAuth page
     if (error.status === 403) {
       router.push('/onedrive-vercel-index-oauth/step-1')
-      return <Dialog.Panel />
+      return <div />
     }
 
     return (
@@ -347,8 +346,8 @@ const FileListing: FC<{ query?: ParsedUrlQuery }> = ({ query }) => {
         {layout.name === 'Grid' ? <FolderGridLayout {...folderProps} /> : <FolderListLayout {...folderProps} />}
 
         {!onlyOnePage && (
-          <Dialog.Panel className="rounded-b bg-white dark:bg-gray-900 dark:text-gray-100">
-            <Dialog.Panel className="border-b border-gray-200 p-3 text-center font-mono text-sm text-gray-400 dark:border-gray-700">
+          <div className="rounded-b bg-white dark:bg-gray-900 dark:text-gray-100">
+            <div className="border-b border-gray-200 p-3 text-center font-mono text-sm text-gray-400 dark:border-gray-700">
               {t('- showing {{count}} page(s) ', {
                 count: size,
                 totalFileNum: isLoadingMore ? '...' : folderChildren.length,
@@ -356,7 +355,7 @@ const FileListing: FC<{ query?: ParsedUrlQuery }> = ({ query }) => {
                 (isLoadingMore
                   ? t('of {{count}} file(s) -', { count: folderChildren.length, context: 'loading' })
                   : t('of {{count}} file(s) -', { count: folderChildren.length, context: 'loaded' }))}
-            </Dialog.Panel>
+            </div>
             <button
               className={`flex w-full items-center justify-center space-x-2 p-3 disabled:cursor-not-allowed ${
                 isLoadingMore || isReachingEnd ? 'opacity-60' : 'hover:bg-gray-100 dark:hover:bg-gray-850'
@@ -378,13 +377,13 @@ const FileListing: FC<{ query?: ParsedUrlQuery }> = ({ query }) => {
                 </>
               )}
             </button>
-          </Dialog.Panel>
+          </div>
         )}
 
         {readmeFile && (
-          <Dialog.Panel className="mt-4">
+          <div className="mt-4">
             <MarkdownPreview file={readmeFile} path={path} standalone={false} />
-          </Dialog.Panel>
+          </div>
         )}
       </>
     )

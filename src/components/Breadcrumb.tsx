@@ -1,7 +1,6 @@
 import type { ParsedUrlQuery } from 'querystring'
 
 import Link from 'next/link'
-import { Dialog } from '@headlessui/react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { useTranslation } from 'next-i18next'
 
@@ -21,7 +20,7 @@ const Breadcrumb: React.FC<{ query?: ParsedUrlQuery }> = ({ query }) => {
     const { path } = query
     if (Array.isArray(path)) {
       // We are rendering the path in reverse, so that the browser automatically scrolls to the end of the breadcrumb
-      // https://stackoverflow.com/questions/18614301/keep-overflow-Dialog.Panel-scrolled-to-bottom-unless-user-scrolls-up/18614561
+      // https://stackoverflow.com/questions/18614301/keep-overflow-div-scrolled-to-bottom-unless-user-scrolls-up/18614561
       return (
         <ol className="no-scrollbar inline-flex flex-row-reverse items-center gap-1 overflow-x-scroll text-sm text-gray-600 dark:text-gray-300 md:gap-3">
           {path
@@ -53,9 +52,9 @@ const Breadcrumb: React.FC<{ query?: ParsedUrlQuery }> = ({ query }) => {
   }
 
   return (
-    <Dialog.Panel className="text-sm text-gray-600 transition-all duration-75 hover:opacity-80 dark:text-gray-300">
+    <div className="text-sm text-gray-600 transition-all duration-75 hover:opacity-80 dark:text-gray-300">
       <HomeCrumb />
-    </Dialog.Panel>
+    </div>
   )
 }
 

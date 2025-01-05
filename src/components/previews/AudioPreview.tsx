@@ -2,7 +2,6 @@ import type { OdFileObject } from '../../types'
 import { FC, useEffect, useRef, useState } from 'react'
 
 import ReactAudioPlayer from 'react-audio-player'
-import { Dialog } from '@headlessui/react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { useTranslation } from 'next-i18next'
 import { useRouter } from 'next/router'
@@ -54,9 +53,9 @@ const AudioPreview: FC<{ file: OdFileObject }> = ({ file }) => {
   return (
     <>
       <PreviewContainer>
-        <Dialog.Panel className="flex flex-col space-y-4 md:flex-row md:space-x-4">
-          <Dialog.Panel className="relative flex aspect-square w-full items-center justify-center rounded bg-gray-100 transition-all duration-75 dark:bg-gray-700 md:w-48">
-            <Dialog.Panel
+        <div className="flex flex-col space-y-4 md:flex-row md:space-x-4">
+          <div className="relative flex aspect-square w-full items-center justify-center rounded bg-gray-100 transition-all duration-75 dark:bg-gray-700 md:w-48">
+            <div
               className={`absolute z-20 flex h-full w-full items-center justify-center transition-all duration-300 ${
                 playerStatus === PlayerState.Loading
                   ? 'bg-white opacity-80 dark:bg-gray-800'
@@ -64,10 +63,10 @@ const AudioPreview: FC<{ file: OdFileObject }> = ({ file }) => {
               }`}
             >
               <LoadingIcon className="z-10 inline-block h-5 w-5 animate-spin" />
-            </Dialog.Panel>
+            </div>
 
             {!brokenThumbnail ? (
-              <Dialog.Panel className="absolute m-4 aspect-square rounded-full shadow-lg">
+              <div className="absolute m-4 aspect-square rounded-full shadow-lg">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
                   className={`h-full w-full rounded-full object-cover object-top ${
@@ -77,7 +76,7 @@ const AudioPreview: FC<{ file: OdFileObject }> = ({ file }) => {
                   alt={file.name}
                   onError={() => setBrokenThumbnail(true)}
                 />
-              </Dialog.Panel>
+              </div>
             ) : (
               <FontAwesomeIcon
                 className={`z-10 h-5 w-5 ${playerStatus === PlayerState.Playing ? 'animate-spin' : ''}`}
@@ -85,15 +84,15 @@ const AudioPreview: FC<{ file: OdFileObject }> = ({ file }) => {
                 size="2x"
               />
             )}
-          </Dialog.Panel>
+          </div>
 
-          <Dialog.Panel className="flex w-full flex-col justify-between">
-            <Dialog.Panel>
-              <Dialog.Panel className="mb-2 font-medium">{file.name}</Dialog.Panel>
-              <Dialog.Panel className="mb-4 text-sm text-gray-500">
+          <div className="flex w-full flex-col justify-between">
+            <div>
+              <div className="mb-2 font-medium">{file.name}</div>
+              <div className="mb-4 text-sm text-gray-500">
                 {t('Last modified:') + ' ' + formatModifiedDateTime(file.lastModifiedDateTime)}
-              </Dialog.Panel>
-            </Dialog.Panel>
+              </div>
+            </div>
 
             <ReactAudioPlayer
               className="h-11 w-full"
@@ -103,8 +102,8 @@ const AudioPreview: FC<{ file: OdFileObject }> = ({ file }) => {
               preload="auto"
               volume={playerVolume}
             />
-          </Dialog.Panel>
-        </Dialog.Panel>
+          </div>
+        </div>
       </PreviewContainer>
 
       <DownloadBtnContainer>

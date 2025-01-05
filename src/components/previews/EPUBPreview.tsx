@@ -3,7 +3,6 @@ import type { OdFileObject } from '../../types'
 import { FC, useEffect, useRef, useState } from 'react'
 import { ReactReader } from 'react-reader'
 import { useRouter } from 'next/router'
-import { Dialog } from '@headlessui/react'
 import { useTranslation } from 'next-i18next'
 
 import Loading from '../Loading'
@@ -16,13 +15,13 @@ const EPUBPreview: FC<{ file: OdFileObject }> = ({ file }) => {
   const hashedToken = getStoredToken(asPath)
 
   const [epubContainerWidth, setEpubContainerWidth] = useState(400)
-  const epubContainer = useRef<HTMLDialogElement>(null)
+  const epubContainer = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
     setEpubContainerWidth(epubContainer.current ? epubContainer.current.offsetWidth : 400)
   }, [])
 
-  const [location, setLocation] = useState<string | number>(0)
+  const [location, setLocation] = useState<string>()
   const onLocationChange = (cfiStr: string) => setLocation(cfiStr)
 
   const { t } = useTranslation()
@@ -43,13 +42,13 @@ const EPUBPreview: FC<{ file: OdFileObject }> = ({ file }) => {
   }
 
   return (
-    <Dialog.Panel>
-      <Dialog.Panel
+    <div>
+      <div
         className="no-scrollbar flex w-full flex-col overflow-scroll rounded bg-white dark:bg-gray-900 md:p-3"
         style={{ maxHeight: '90vh' }}
       >
-        <Dialog.Panel className="no-scrollbar w-full flex-1 overflow-scroll" ref={epubContainer} style={{ minHeight: '70vh' }}>
-          <Dialog.Panel
+        <div className="no-scrollbar w-full flex-1 overflow-scroll" ref={epubContainer} style={{ minHeight: '70vh' }}>
+          <div
             style={{
               position: 'absolute',
               width: epubContainerWidth,
@@ -65,13 +64,13 @@ const EPUBPreview: FC<{ file: OdFileObject }> = ({ file }) => {
               epubInitOptions={{ openAs: 'epub' }}
               epubOptions={{ flow: 'scrolled', allowPopups: true }}
             />
-          </Dialog.Panel>
-        </Dialog.Panel>
-      </Dialog.Panel>
+          </div>
+        </div>
+      </div>
       <DownloadBtnContainer>
         <DownloadButtonGroup />
       </DownloadBtnContainer>
-    </Dialog.Panel>
+    </div>
   )
 }
 

@@ -3,7 +3,6 @@ import type { OdFolderChildren } from '../types'
 import Link from 'next/link'
 import { FC } from 'react'
 import { useClipboard } from 'use-clipboard-copy'
-import { Dialog } from '@headlessui/react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { useTranslation } from 'next-i18next'
 
@@ -15,20 +14,20 @@ import { getStoredToken } from '../utils/protectedRouteHandler'
 
 const FileListItem: FC<{ fileContent: OdFolderChildren }> = ({ fileContent: c }) => {
   return (
-    <Dialog.Panel className="grid cursor-pointer grid-cols-10 items-center space-x-2 px-3 py-2.5">
-      <Dialog.Panel className="col-span-10 flex items-center space-x-2 truncate md:col-span-6" title={c.name}>
-        <Dialog.Panel className="w-5 flex-shrink-0 text-center">
+    <div className="grid cursor-pointer grid-cols-10 items-center space-x-2 px-3 py-2.5">
+      <div className="col-span-10 flex items-center space-x-2 truncate md:col-span-6" title={c.name}>
+        <div className="w-5 flex-shrink-0 text-center">
           <ChildIcon child={c} />
-        </Dialog.Panel>
+        </div>
         <ChildName name={c.name} folder={Boolean(c.folder)} />
-      </Dialog.Panel>
-      <Dialog.Panel className="col-span-3 hidden flex-shrink-0 font-mono text-sm text-gray-700 dark:text-gray-500 md:block">
+      </div>
+      <div className="col-span-3 hidden flex-shrink-0 font-mono text-sm text-gray-700 dark:text-gray-500 md:block">
         {formatModifiedDateTime(c.lastModifiedDateTime)}
-      </Dialog.Panel>
-      <Dialog.Panel className="col-span-1 hidden flex-shrink-0 truncate font-mono text-sm text-gray-700 dark:text-gray-500 md:block">
+      </div>
+      <div className="col-span-1 hidden flex-shrink-0 truncate font-mono text-sm text-gray-700 dark:text-gray-500 md:block">
         {humanFileSize(c.size)}
-      </Dialog.Panel>
-    </Dialog.Panel>
+      </div>
+    </div>
   )
 }
 
@@ -55,22 +54,22 @@ const FolderListLayout = ({
   const getItemPath = (name: string) => `${path === '/' ? '' : path}/${encodeURIComponent(name)}`
 
   return (
-    <Dialog.Panel className="rounded bg-white shadow-sm dark:bg-gray-900 dark:text-gray-100">
-      <Dialog.Panel className="grid grid-cols-12 items-center space-x-2 border-b border-gray-900/10 px-3 dark:border-gray-500/30">
-        <Dialog.Panel className="col-span-12 py-2 text-xs font-bold uppercase tracking-widest text-gray-600 dark:text-gray-300 md:col-span-6">
+    <div className="rounded bg-white shadow-sm dark:bg-gray-900 dark:text-gray-100">
+      <div className="grid grid-cols-12 items-center space-x-2 border-b border-gray-900/10 px-3 dark:border-gray-500/30">
+        <div className="col-span-12 py-2 text-xs font-bold uppercase tracking-widest text-gray-600 dark:text-gray-300 md:col-span-6">
           {t('Name')}
-        </Dialog.Panel>
-        <Dialog.Panel className="col-span-3 hidden text-xs font-bold uppercase tracking-widest text-gray-600 dark:text-gray-300 md:block">
+        </div>
+        <div className="col-span-3 hidden text-xs font-bold uppercase tracking-widest text-gray-600 dark:text-gray-300 md:block">
           {t('Last Modified')}
-        </Dialog.Panel>
-        <Dialog.Panel className="hidden text-xs font-bold uppercase tracking-widest text-gray-600 dark:text-gray-300 md:block">
+        </div>
+        <div className="hidden text-xs font-bold uppercase tracking-widest text-gray-600 dark:text-gray-300 md:block">
           {t('Size')}
-        </Dialog.Panel>
-        <Dialog.Panel className="hidden text-xs font-bold uppercase tracking-widest text-gray-600 dark:text-gray-300 md:block">
+        </div>
+        <div className="hidden text-xs font-bold uppercase tracking-widest text-gray-600 dark:text-gray-300 md:block">
           {t('Actions')}
-        </Dialog.Panel>
-        <Dialog.Panel className="hidden text-xs font-bold uppercase tracking-widest text-gray-600 dark:text-gray-300 md:block">
-          <Dialog.Panel className="hidden p-1.5 text-gray-700 dark:text-gray-400 md:flex">
+        </div>
+        <div className="hidden text-xs font-bold uppercase tracking-widest text-gray-600 dark:text-gray-300 md:block">
+          <div className="hidden p-1.5 text-gray-700 dark:text-gray-400 md:flex">
             <Checkbox
               checked={totalSelected}
               onChange={toggleTotalSelected}
@@ -100,12 +99,12 @@ const FolderListLayout = ({
                 <FontAwesomeIcon icon={['far', 'arrow-alt-circle-down']} size="lg" />
               </button>
             )}
-          </Dialog.Panel>
-        </Dialog.Panel>
-      </Dialog.Panel>
+          </div>
+        </div>
+      </div>
 
       {folderChildren.map((c: OdFolderChildren) => (
-        <Dialog.Panel
+        <div
           className="grid grid-cols-12 transition-all duration-100 hover:bg-gray-100 dark:hover:bg-gray-850"
           key={c.id}
         >
@@ -118,7 +117,7 @@ const FolderListLayout = ({
           </Link>
 
           {c.folder ? (
-            <Dialog.Panel className="hidden p-1.5 text-gray-700 dark:text-gray-400 md:flex">
+            <div className="hidden p-1.5 text-gray-700 dark:text-gray-400 md:flex">
               <span
                 title={t('Copy folder permalink')}
                 className="cursor-pointer rounded px-1.5 py-1 hover:bg-gray-300 dark:hover:bg-gray-600"
@@ -143,9 +142,9 @@ const FolderListLayout = ({
                   <FontAwesomeIcon icon={['far', 'arrow-alt-circle-down']} />
                 </span>
               )}
-            </Dialog.Panel>
+            </div>
           ) : (
-            <Dialog.Panel className="hidden p-1.5 text-gray-700 dark:text-gray-400 md:flex">
+            <div className="hidden p-1.5 text-gray-700 dark:text-gray-400 md:flex">
               <span
                 title={t('Copy raw file permalink')}
                 className="cursor-pointer rounded px-1.5 py-1 hover:bg-gray-300 dark:hover:bg-gray-600"
@@ -165,9 +164,9 @@ const FolderListLayout = ({
               >
                 <FontAwesomeIcon icon={['far', 'arrow-alt-circle-down']} />
               </a>
-            </Dialog.Panel>
+            </div>
           )}
-          <Dialog.Panel className="hidden p-1.5 text-gray-700 dark:text-gray-400 md:flex">
+          <div className="hidden p-1.5 text-gray-700 dark:text-gray-400 md:flex">
             {!c.folder && !(c.name === '.password') && (
               <Checkbox
                 checked={selected[c.id] ? 2 : 0}
@@ -175,10 +174,10 @@ const FolderListLayout = ({
                 title={t('Select file')}
               />
             )}
-          </Dialog.Panel>
-        </Dialog.Panel>
+          </div>
+        </div>
       ))}
-    </Dialog.Panel>
+    </div>
   )
 }
 

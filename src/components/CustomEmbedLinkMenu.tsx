@@ -13,15 +13,15 @@ function LinkContainer({ title, value }: { title: string; value: string }) {
   return (
     <>
       <h4 className="py-2 text-xs font-medium uppercase tracking-wider">{title}</h4>
-      <Dialog.Panel className="group relative mb-2 max-h-24 overflow-y-scroll break-all rounded border border-gray-400/20 bg-gray-50 p-2.5 font-mono dark:bg-gray-800">
-        <Dialog.Panel className="opacity-80">{value}</Dialog.Panel>
+      <div className="group relative mb-2 max-h-24 overflow-y-scroll break-all rounded border border-gray-400/20 bg-gray-50 p-2.5 font-mono dark:bg-gray-800">
+        <div className="opacity-80">{value}</div>
         <button
           onClick={() => clipboard.copy(value)}
           className="absolute top-[0.2rem] right-[0.2rem] w-8 rounded border border-gray-400/40 bg-gray-100 py-1.5 opacity-0 transition-all duration-100 hover:bg-gray-200 group-hover:opacity-100 dark:bg-gray-850 dark:hover:bg-gray-700"
         >
           {clipboard.copied ? <FontAwesomeIcon icon="check" /> : <FontAwesomeIcon icon="copy" />}
         </button>
-      </Dialog.Panel>
+      </div>
     </>
   )
 }
@@ -50,7 +50,7 @@ export default function CustomEmbedLinkMenu({
   return (
     <Transition appear show={menuOpen} as={Fragment}>
       <Dialog as="div" className="fixed inset-0 z-10 overflow-y-auto" onClose={closeMenu} initialFocus={focusInputRef}>
-        <Dialog.Panel className="min-h-screen px-4 text-center">
+        <div className="min-h-screen px-4 text-center">
           <Transition.Child
             as={Fragment}
             enter="ease-out duration-100"
@@ -60,7 +60,7 @@ export default function CustomEmbedLinkMenu({
             leaveFrom="opacity-100"
             leaveTo="opacity-0"
           >
-            <div className="fixed inset-0 bg-white/60 dark:bg-gray-800/60" />
+            <Dialog.Overlay className="fixed inset-0 bg-white/60 dark:bg-gray-800/60" />
           </Transition.Child>
 
           {/* This element is to trick the browser into centering the modal contents. */}
@@ -76,7 +76,7 @@ export default function CustomEmbedLinkMenu({
             leaveFrom="opacity-100 scale-100"
             leaveTo="opacity-0 scale-95"
           >
-            <Dialog.Panel className="inline-block max-h-[80vh] w-full max-w-3xl transform overflow-hidden overflow-y-scroll rounded border border-gray-400/30 bg-white p-4 text-left align-middle text-sm shadow-xl transition-all dark:bg-gray-900 dark:text-white">
+            <div className="inline-block max-h-[80vh] w-full max-w-3xl transform overflow-hidden overflow-y-scroll rounded border border-gray-400/30 bg-white p-4 text-left align-middle text-sm shadow-xl transition-all dark:bg-gray-900 dark:text-white">
               <Dialog.Title as="h3" className="py-2 text-xl font-bold">
                 {t('Customise direct link')}
               </Dialog.Title>
@@ -94,7 +94,7 @@ export default function CustomEmbedLinkMenu({
                 </>
               </Dialog.Description>
 
-              <Dialog.Panel className="mt-4">
+              <div className="mt-4">
                 <h4 className="py-2 text-xs font-medium uppercase tracking-wider">{t('Filename')}</h4>
                 <input
                   className="mb-2 w-full rounded border border-gray-600/10 p-2.5 font-mono focus:outline-none focus:ring focus:ring-blue-300 dark:bg-gray-600 dark:text-white dark:focus:ring-blue-700"
@@ -121,10 +121,10 @@ export default function CustomEmbedLinkMenu({
                   title={t('Customised and encoded')}
                   value={`${getBaseUrl()}/api/name/${name}?path=${path}${hashedToken ? `&odpt=${hashedToken}` : ''}`}
                 />
-              </Dialog.Panel>
-            </Dialog.Panel>
+              </div>
+            </div>
           </Transition.Child>
-        </Dialog.Panel>
+        </div>
       </Dialog>
     </Transition>
   )

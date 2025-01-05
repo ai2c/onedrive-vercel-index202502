@@ -3,7 +3,6 @@ import type { OdFileObject } from '../../types'
 import { FC } from 'react'
 import { useRouter } from 'next/router'
 
-import { Dialog } from '@headlessui/react'
 import { PreviewContainer, DownloadBtnContainer } from './Containers'
 import DownloadButtonGroup from '../DownloadBtnGtoup'
 import { getStoredToken } from '../../utils/protectedRouteHandler'
