@@ -17,9 +17,7 @@
     "@fortawesome/free-solid-svg-icons": "^6.7.2",
     "@fortawesome/react-fontawesome": "^0.2.2",
     "@headlessui/react": "^2.2.0",
-    "@mapbox/node-pre-gyp": "^1.0.11",
     "@tailwindcss/line-clamp": "^0.4.4",
-    "@types/react-pdf": "7.0.0",
     "@vercel/analytics": "^1.4.1",
     "awesome-debounce-promise": "^2.1.0",
     "axios": "^1.7.9",
@@ -42,13 +40,11 @@
     "react-audio-player": "^0.17.0",
     "react-cookie": "^7.2.2",
     "react-copy-to-clipboard": "^5.1.0",
-    "react-countup": "^6.5.3",
     "react-dom": "^19.0.0",
     "react-hot-toast": "^2.5.1",
     "react-hotkeys-hook": "^4.6.1",
     "react-i18next": "^15.4.0",
     "react-markdown": "8.0.7",
-    "react-pdf": "^9.2.1",
     "react-reader": "^2.0.12",
     "react-syntax-highlighter": "^15.6.1",
     "react-use-system-theme": "^1.1.1",
@@ -58,8 +54,7 @@
     "remark-math": "^6.0.0",
     "swr": "^2.3.0",
     "use-clipboard-copy": "^0.2.0",
-    "use-constant": "^1.1.1",
-	"countup.js": "2.5.0"
+    "use-constant": "^1.1.1"
   },
   "devDependencies": {
     "@types/cors": "^2.8.17",
