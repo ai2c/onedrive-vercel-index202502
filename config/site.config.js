@@ -5,7 +5,7 @@
 module.exports = {
   // This is what we use to identify who you are when you are initialising the website for the first time.
   // Make sure this is exactly the same as the email address you use to sign into your Microsoft account.
-  // You MUST put this in your Vercel's environment variable 'NEXT_PUBLIC_USER_PRINCIPLE_NAME' and VALUE is your Microsoft account.
+  // You MUST put this in your Vercel's environment variable KEY is 'NEXT_PUBLIC_USER_PRINCIPLE_NAME' and VALUE is 'your Microsoft account'.
   // your email being exposed in public.
   userPrincipalName: process.env.NEXT_PUBLIC_USER_PRINCIPLE_NAME || '',
 
