@@ -12,12 +12,12 @@
 如有任何疑問、查詢及指教, 或因版權等原因需要刪除文件, 歡迎在首頁右上角(電郵)Email聯繫我。
 
 ---
-## 最近更新(<i>2025年1月4日</i>)
+## 最近更新(<i>2025年1月10日</i>)
 <b><i>CorelDRAW Technical Suite 2024.</b></i> 25.2.1.313 (英葡繁簡)精簡為四語破解版_20241018<a href="https://www.coreldraw.com/en/product/technical-suite/" target="_blank" rel="noopener noreferrer">官網說明</a>價值1459美元
 <br>
 <b><i>檔案蜈蚣</b></i> 2.82高級破解版x64_20240515<a href="https://www.filecxx.com/zh_TW/index.html" target="_blank" rel="noopener noreferrer">官網說明</a>比IDM更好(已助作者解決繁體取得永久會員碼),2023-2-7破解,2024-5-15修正
 <br>
-<b><i>新舊系統驅動程式自動掃描下載IObit Driver Booster Pro 繁體</b></i> 12.1.0.469_20241111 <a href="https://www.iobit.com/en/driver-booster-pro.php" target="_blank" rel="noopener noreferrer">官網說明</a>(老外)無捆綁體積小-完全取代簡體驅動人生驅動精靈驅動總裁ITSK自由天空(懂的都懂)
+<b><i>新舊系統驅動程式自動掃描下載IObit Driver Booster Pro 繁體</b></i> 12.2.0.542_20250110 <a href="https://www.iobit.com/en/driver-booster-pro.php" target="_blank" rel="noopener noreferrer">官網說明</a>(老外)無捆綁體積小-完全取代簡體驅動人生驅動精靈驅動總裁ITSK自由天空(懂的都懂)
 <br>
 <b><i>Fastcopy</b></i> Pro 5.8.0 x32+x64最完美三語版(繁簡英)由本人修改20241010<a href="https://fastcopy.jp/" target="_blank" rel="noopener noreferrer">官網說明</a>
 <br>
