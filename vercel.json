@@ -2,6 +2,9 @@
     "github": {
         "silent": true
     },
+	"engines": {
+        "node": "20.x"
+    },
     "buildCommand": "pnpm build",
     "installCommand": "pnpm install"
 }
