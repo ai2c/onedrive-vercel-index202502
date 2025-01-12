@@ -2,6 +2,9 @@
   "name": "onedrive-vercel-index",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+        "node": "20.x"
+   },  
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -9,7 +12,7 @@
     "lint": "next lint",
     "format": "prettier 'src/**/*.{js,ts,jsx,tsx}' --write",
     "extract": "i18next"
-  },
+   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.5.1",
     "@fortawesome/free-brands-svg-icons": "^6.5.1",
